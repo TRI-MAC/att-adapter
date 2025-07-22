@@ -52,7 +52,7 @@
     <p>
       <b>Att-Adapter</b> overcomes these challenges by introducing a plug-and-play module for pretrained diffusion models that enables robust, fine-grained, and multi-attribute control from unpaired real data. Our approach leverages a decoupled cross-attention module to harmonize multiple domain attributes with text conditioning, and incorporates a Conditional Variational Autoencoder (CVAE) to mitigate overfitting and model the diversity of real-world attributes. This design allows Att-Adapter to support both continuous and discrete attribute spaces, handle indescribable attributes, and scale to many attributes within a single model—without requiring paired synthetic data or separate models for each attribute.
     </p>
-    <img src="images/method_overview.jpg" alt="Att-Adapter Overview" style="width:100%;max-width:1000px;display:block;margin:auto;">
+    <img src="images/method_overview.png" alt="Att-Adapter Overview" style="width:100%;max-width:1000px;display:block;margin:auto;">
     <h3 style="text-align:center;"><em>Overview of the Att-Adapter approach for attribute control in diffusion models.</em></h3>
   </div>
 
@@ -82,7 +82,7 @@
     <p>
       <b>Latent Control:</b> Att-Adapter outperforms baselines such as ConceptSlider&nbsp;<a href="#ref-gandikota2024concept" id="ref-gandikota2024concept-ref">[a]</a>, <span style="font-family:monospace;">W<sub>+</sub></span> Adapter&nbsp;<a href="#ref-li2024stylegan" id="ref-li2024stylegan-ref">[b]</a>, and S-I-GANs&nbsp;<a href="#ref-shen2020interfacegan" id="ref-shen2020interfacegan-ref">[c]</a> in both control range (CR) and disentanglement (DIS) for single and multiple attribute settings. Our method achieves higher expressivity and better disentanglement, as shown in the table below and the qualitative comparison.
     </p>
-    <img class="results-figure" src="images/continuous_baseline_comparison.jpg" alt="Continuous Attribute Comparison">
+    <img class="results-figure" src="images/continuous_baseline_comparison.png" alt="Continuous Attribute Comparison">
     <div class="results-caption"><em>Comparison of continuous attribute control with baselines. Att-Adapter achieves stronger target attribute effects and better disentanglement.</em></div>
     <p>
       <b>Absolute Control:</b> In the absolute control setting, Att-Adapter demonstrates superior performance compared to LoRA and ITI-GEN, especially in controlling fine-grained facial attributes and extrapolating beyond the training range. Our method maintains high visual fidelity and better alignment with target attributes.
